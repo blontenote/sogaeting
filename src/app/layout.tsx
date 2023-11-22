@@ -16,7 +16,7 @@ export default function RootLayout(props: {
   modal: React.ReactNode;
 }) {
   const { children, modal } = props;
-  console.warn('---props:', props);
+  console.warn('---props:', props.modal);
   return (
     <html lang="en">
       <body className={inter.className}>
