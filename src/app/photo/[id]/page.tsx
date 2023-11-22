@@ -1,8 +1,7 @@
 'use client';
 
 import { useRouter, usePathname, useParams } from 'next/navigation';
-
-export default () => {
+const PhotoPage = () => {
   const router = useRouter();
   const pathname = usePathname();
   const params = useParams();
@@ -11,3 +10,5 @@ export default () => {
   console.warn('params:', params);
   return <div>{params && params.id && params.id}</div>;
 };
+
+export default PhotoPage;

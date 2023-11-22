@@ -2,7 +2,8 @@
 
 import { useRouter, usePathname, useParams } from 'next/navigation';
 import Modal from '~/components/common/Modal';
-export default () => {
+
+const PhotoModal = () => {
   const router = useRouter();
   const pathname = usePathname();
   const params = useParams();
@@ -15,3 +16,5 @@ export default () => {
     </Modal>
   );
 };
+
+export default PhotoModal;

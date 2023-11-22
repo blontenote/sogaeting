@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation';
 import { defaultAction } from '~/store/recoil';
 import Link from 'next/link';
 
-export default () => {
+const IndexPage = () => {
   const [action, setAction] = useRecoilState(defaultAction);
   const [id, setId] = useState<string>('');
   const a: IDefault = {
@@ -32,3 +32,5 @@ export default () => {
     </div>
   );
 };
+
+export default IndexPage;
