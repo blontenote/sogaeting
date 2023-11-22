@@ -8,7 +8,7 @@ const ModalWrapper = ({ children }: { children: React.ReactNode }) => {
     <Modal>
       {children}
       <br />
-      <button onClick={() => router.back()}>닫기</button>
+      <button onClick={() => router.push('/')}>닫기</button>
     </Modal>
   );
 };
